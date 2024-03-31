@@ -19,7 +19,7 @@ int main(){
         p->prox = lista;
         lista = p;
 
-        printf("Deseja inserir outro no a esquerda? 0-nao 1-sim");
+        printf("Deseja inserir outro no a esquerda? 0-nao 1-sim:");
         scanf("%i", &sn);
     }
     while(sn == 1);
@@ -27,7 +27,7 @@ int main(){
     printf("\n\n");
     p = lista;
     while(p != NULL){
-        printf("%i", p->dado);
+        printf("%i  ", p->dado);
         p = p->prox;
     }
 
