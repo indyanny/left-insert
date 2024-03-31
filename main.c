@@ -15,7 +15,7 @@ int main(){
     do{
         p = malloc(sizeof(struct no));
         printf("Digite um dado a inserir na lista:");
-        scanf("%i", &p->prox);
+        scanf("%i", &p->dado);
         p->prox = lista;
         lista = p;
 
