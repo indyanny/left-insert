@@ -14,20 +14,20 @@ int main(){
 
     do{
         p = malloc(sizeof(struct no));
-        printf("Digite um dado a inserir na lista:");
-        scanf("%i", &p->dado);
+        printf("Digite o dado a ser inserido na lista:");
+        scanf("%d", &p->dado);
         p->prox = lista;
         lista = p;
 
-        printf("Deseja inserir outro no a esquerda? 0-nao 1-sim:");
-        scanf("%i", &sn);
+        printf("Deseja inserir outro no a esquerda? 0-nao 1-sim: ");
+        scanf("%d", &sn);
     }
     while(sn == 1);
 
     printf("\n\n");
     p = lista;
     while(p != NULL){
-        printf("%i  ", p->dado);
+        printf("%d  ", p->dado);
         p = p->prox;
     }
 
