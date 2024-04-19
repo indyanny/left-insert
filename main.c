@@ -19,11 +19,12 @@ int main(){
         p->prox = lista;
         lista = p;
 
-        printf("Deseja inserir outro no a esquerda? 0-nao 1-sim: ");
+        printf("Deseja inserir outro dado a esquerda? 0-nao 1-sim: ");
         scanf("%d", &sn);
     }
     while(sn == 1);
 
+    //imprime lista
     printf("\n\n");
     p = lista;
     while(p != NULL){
